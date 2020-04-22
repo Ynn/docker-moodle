@@ -16,6 +16,9 @@ sudo docker run -d --name moodle -p 8880:80 -p 8881:443 \
   -e ALLOW_EMPTY_PASSWORD=yes \
   -e MOODLE_DATABASE_USER=bn_moodle \
   -e MOODLE_DATABASE_NAME=bitnami_moodle \
+  -e MOODLE_USERNAME=istic \
+  -e MOODLE_PASSWORD=istic \
+
   --net moodle-tier \
   --volume moodle_data:/bitnami \
   bitnami/moodle:latest
